@@ -18,8 +18,10 @@ export default function TodoList() {
       <input
         className={s.checkbox}
         type="checkbox"
+        id="checkbox"
         onChange={() => dispatch(complete(todolist[idx].id))}
       />
+      {/* <label for="checkbox" /> */}
       <div className={s.todolist}>
         {todo.complete === false ? <>{todo.text}</> : <del>{todo.text}</del>}
       </div>
@@ -35,7 +37,9 @@ export default function TodoList() {
 
   return (
     <>
-      <ul>{todolistView}</ul>
+      <div className={s.todolistContainer}>
+        <ul>{todolistView}</ul>
+      </div>
     </>
   );
 }

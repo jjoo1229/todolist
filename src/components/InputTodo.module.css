@@ -1,0 +1,27 @@
+.inputContainer {
+  margin: 10px 0;
+}
+
+.textbar {
+  border: 2px solid skyblue;
+  border-radius: 15px;
+  width: 300px;
+  height: 30px;
+  outline: none;
+  padding: 0 10px;
+  margin-right: 10px;
+  background-color: transparent;
+}
+
+.submitbutton {
+  color: white;
+  background-color: skyblue;
+  border: none;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none; /* 드래그 금지 */
+}

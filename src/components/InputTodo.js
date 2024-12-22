@@ -30,7 +30,7 @@ export default function InputTodo() {
           onReset();
         }}
       >
-        <div>
+        <div className={s.inputContainer}>
           <input
             className={s.textbar}
             type="text"

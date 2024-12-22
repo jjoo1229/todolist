@@ -6,8 +6,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <InputTodo />
-        <TodoList />
+        <div className="App-container">
+          <InputTodo />
+          <TodoList />
+        </div>
       </header>
     </div>
   );

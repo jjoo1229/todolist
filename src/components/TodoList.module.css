@@ -1,0 +1,56 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 380px;
+}
+
+.checkbox {
+  /* display: none; */
+}
+
+.checkbox + label {
+  width: 30px;
+  height: 30px;
+  border: 1px solid gray;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  border-radius: 15px;
+  user-select: none; /* 드래그 금지 */
+  margin-right: 10px;
+}
+
+.checkbox:checked + label {
+  /* 체크되었을 때 */
+  background: skyblue;
+}
+
+.todolist {
+  width: 325px;
+  word-wrap: break-word; /* 긴 단어를 줄바꿈 */
+  word-break: break-word; /* 추가적으로 줄바꿈 규칙 적용 */
+  white-space: normal;
+}
+
+.deleteBtn {
+  width: 30px;
+  height: 30px;
+  color: gray;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none; /* 드래그 금지 */
+}
+
+.todolistContainer {
+  max-height: 430px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+ul {
+  padding-inline-start: 10px;
+}
